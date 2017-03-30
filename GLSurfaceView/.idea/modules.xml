@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GLSurfaceView.iml" filepath="$PROJECT_DIR$/GLSurfaceView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simplegl/simplegl.iml" filepath="$PROJECT_DIR$/simplegl/simplegl.iml" />
     </modules>
   </component>
 </project>
