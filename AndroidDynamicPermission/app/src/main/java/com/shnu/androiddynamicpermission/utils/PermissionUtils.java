@@ -27,6 +27,42 @@ import java.util.Map;
 public class PermissionUtils {
 
     private static final String TAG = PermissionUtils.class.getSimpleName();
+    //Permission Group Calendar
+    public static final int CODE_READ_CALENDAR = 0;
+    public static final int CODE_WRITE_CALENDAR = 1;
+    //Permission Group Camera
+    public static final int CODE_CAMERA = 2;
+    //Permission Group Contacts
+    public static final int CODE_READ_CONTACTS = 3;
+    public static final int CODE_WRITE_CONTACTS = 4;
+    public static final int CODE_GET_CONTACTS = 5;
+    //Permission Group Location
+    public static final int CODE_ACCESS_FINE_LOCATION = 6;
+    public static final int CODE_ACCESS_COARSE_LOCATION = 7;
+    //Permission Group MicroPhone
+    public static final int CODE_RECORD_AUDIO = 8;
+    //Permission Group Phone
+    public static final int CODE_READ_PHONE_STATUE = 9;
+    public static final int CODE_CALL_PHONE = 10;
+    public static final int CODE_READ_CALL_LOG = 11;
+    public static final int CODE_WRITE_CALL_LOG = 12;
+    public static final int CODE_ADD_VOICEMAIL = 13;
+    public static final int CODE_USE_SIP = 14;
+    public static final int CODE_PROCESS_OUTGOING_CALLS = 15;
+    //Permission Group Sensor;
+    public static final int CODE_BODY_SENSORS = 16;
+    //Permission Group SMS
+    public static final int CODE_SEND_SMS = 17;
+    public static final int CODE_RECEIVE_SMS = 18;
+    public static final int CODE_READ_SMS = 19;
+    public static final int CODE_RECEIVE_WAP_PUSH = 20;
+    public static final int CODE_RECEIVE_MMS = 21;
+    public static final int CODE_READ_CELL_BROADCASTS = 22;
+    //Permission Storage Group
+    public static final int CODE_READ_EXTERNAL_STORAGE = 23;
+    public static final int CODE_WRITE_EXTERNAL_STORAGE = 24;
+
+
     public static final int CODE_RECORD_AUDIO = 0;
     public static final int CODE_GET_ACCOUNTS = 1;
     public static final int CODE_READ_PHONE_STATE = 2;
@@ -37,6 +73,13 @@ public class PermissionUtils {
     public static final int CODE_READ_EXTERNAL_STORAGE = 7;
     public static final int CODE_WRITE_EXTERNAL_STORAGE = 8;
     public static final int CODE_MULTI_PERMISSION = 100;
+
+    //
+    public static final String PERMISSION_READ_CALENDAR = Manifest.permission.READ_CALENDAR;
+    public static final String PERMISSION_WIRTE_CALENDAR = Manifest.permission.WRITE_CALENDAR;
+    
+    public static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
+
 
     public static final String PERMISSION_RECORD_AUDIO = Manifest.permission.RECORD_AUDIO;
     public static final String PERMISSION_GET_ACCOUNTS = Manifest.permission.GET_ACCOUNTS;
