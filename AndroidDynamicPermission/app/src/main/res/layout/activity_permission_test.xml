@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_camera_permission"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_record_audio_permission"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Record Audio"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_get_account"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Get Account"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_call_phone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Call Phone"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_read_phone_statue"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Read Phone Statue"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_access_fine_location"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Access Fine Location"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_access_cross_location"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Access Cross Location"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_read_external_storage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Read External Storage"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_write_external_storage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Write External Storage"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
