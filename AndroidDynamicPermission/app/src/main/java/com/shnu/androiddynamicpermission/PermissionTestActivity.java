@@ -24,20 +24,25 @@ public class PermissionTestActivity extends AppCompatActivity implements View.On
         @Override
         public void onPermissionGranted(int requestCode) {
             switch (requestCode) {
-                case PermissionUtils.CODE_RECORD_AUDIO:
-                    Toast.makeText(mContext, "Result Permission Grant CODE_RECORD_AUDIO", Toast.LENGTH_SHORT).show();
+
+
+                case PermissionUtils.CODE_READ_CALENDAR:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_READ_CALENDAR", Toast.LENGTH_SHORT).show();
                     break;
-                case PermissionUtils.CODE_GET_ACCOUNTS:
-                    Toast.makeText(mContext, "Result Permission Grant CODE_GET_ACCOUNTS", Toast.LENGTH_SHORT).show();
-                    break;
-                case PermissionUtils.CODE_READ_PHONE_STATE:
-                    Toast.makeText(mContext, "Result Permission Grant CODE_READ_PHONE_STATE", Toast.LENGTH_SHORT).show();
-                    break;
-                case PermissionUtils.CODE_CALL_PHONE:
-                    Toast.makeText(mContext, "Result Permission Grant CODE_CALL_PHONE", Toast.LENGTH_SHORT).show();
+                case PermissionUtils.CODE_WRITE_CALENDAR:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_WRITE_CALENDAR", Toast.LENGTH_SHORT).show();
                     break;
                 case PermissionUtils.CODE_CAMERA:
                     Toast.makeText(mContext, "Result Permission Grant CODE_CAMERA", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_READ_CONTACTS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_READ_CONTACTS", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_WRITE_CONTACTS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_WRITE_CONTACTS", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_GET_ACCOUNTS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_GET_ACCOUNTS", Toast.LENGTH_SHORT).show();
                     break;
                 case PermissionUtils.CODE_ACCESS_FINE_LOCATION:
                     Toast.makeText(mContext, "Result Permission Grant CODE_ACCESS_FINE_LOCATION", Toast.LENGTH_SHORT).show();
@@ -45,6 +50,49 @@ public class PermissionTestActivity extends AppCompatActivity implements View.On
                 case PermissionUtils.CODE_ACCESS_COARSE_LOCATION:
                     Toast.makeText(mContext, "Result Permission Grant CODE_ACCESS_COARSE_LOCATION", Toast.LENGTH_SHORT).show();
                     break;
+                case PermissionUtils.CODE_RECORD_AUDIO:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_RECORD_AUDIO", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_READ_PHONE_STATE:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_READ_PHONE_STATE", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_CALL_PHONE:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_CALL_PHONE", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_READ_CALL_LOG:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_READ_CALL_LOG", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_WRITE_CALL_LOG:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_WRITE_CALL_LOG", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_ADD_VOICEMAIL:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_ADD_VOICEMAIL", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_USE_SIP:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_USE_SIP", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_PROCESS_OUTGOING_CALLS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_PROCESS_OUTGOING_CALLS", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_BODY_SENSORS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_BODY_SENSORS", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_SEND_SMS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_SEND_SMS", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_RECEIVE_SMS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_RECEIVE_SMS", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_READ_SMS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_READ_SMS", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_RECEIVE_WAP_PUSH:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_RECEIVE_WAP_PUSH", Toast.LENGTH_SHORT).show();
+                    break;
+                case PermissionUtils.CODE_RECEIVE_MMS:
+                    Toast.makeText(mContext, "Result Permission Grant CODE_RECEIVE_MMS", Toast.LENGTH_SHORT).show();
+                    break;
+
                 case PermissionUtils.CODE_READ_EXTERNAL_STORAGE:
                     Toast.makeText(mContext, "Result Permission Grant CODE_READ_EXTERNAL_STORAGE", Toast.LENGTH_SHORT).show();
                     break;

@@ -35,14 +35,14 @@ public class PermissionUtils {
     //Permission Group Contacts
     public static final int CODE_READ_CONTACTS = 3;
     public static final int CODE_WRITE_CONTACTS = 4;
-    public static final int CODE_GET_CONTACTS = 5;
+    public static final int CODE_GET_ACCOUNTS = 5;
     //Permission Group Location
     public static final int CODE_ACCESS_FINE_LOCATION = 6;
     public static final int CODE_ACCESS_COARSE_LOCATION = 7;
     //Permission Group MicroPhone
     public static final int CODE_RECORD_AUDIO = 8;
     //Permission Group Phone
-    public static final int CODE_READ_PHONE_STATUE = 9;
+    public static final int CODE_READ_PHONE_STATE = 9;
     public static final int CODE_CALL_PHONE = 10;
     public static final int CODE_READ_CALL_LOG = 11;
     public static final int CODE_WRITE_CALL_LOG = 12;
@@ -57,48 +57,100 @@ public class PermissionUtils {
     public static final int CODE_READ_SMS = 19;
     public static final int CODE_RECEIVE_WAP_PUSH = 20;
     public static final int CODE_RECEIVE_MMS = 21;
-    public static final int CODE_READ_CELL_BROADCASTS = 22;
+//    public static final int CODE_READ_CELL_BROADCASTS = 22;
     //Permission Storage Group
-    public static final int CODE_READ_EXTERNAL_STORAGE = 23;
-    public static final int CODE_WRITE_EXTERNAL_STORAGE = 24;
+    public static final int CODE_READ_EXTERNAL_STORAGE = 22;
+    public static final int CODE_WRITE_EXTERNAL_STORAGE = 23;
 
 
-    public static final int CODE_RECORD_AUDIO = 0;
-    public static final int CODE_GET_ACCOUNTS = 1;
-    public static final int CODE_READ_PHONE_STATE = 2;
-    public static final int CODE_CALL_PHONE = 3;
-    public static final int CODE_CAMERA = 4;
-    public static final int CODE_ACCESS_FINE_LOCATION = 5;
-    public static final int CODE_ACCESS_COARSE_LOCATION = 6;
-    public static final int CODE_READ_EXTERNAL_STORAGE = 7;
-    public static final int CODE_WRITE_EXTERNAL_STORAGE = 8;
+//    public static final int CODE_RECORD_AUDIO = 0;
+//    public static final int CODE_GET_ACCOUNTS = 1;
+//    public static final int CODE_READ_PHONE_STATE = 2;
+//    public static final int CODE_CALL_PHONE = 3;
+//    public static final int CODE_CAMERA = 4;
+//    public static final int CODE_ACCESS_FINE_LOCATION = 5;
+//    public static final int CODE_ACCESS_COARSE_LOCATION = 6;
+//    public static final int CODE_READ_EXTERNAL_STORAGE = 7;
+//    public static final int CODE_WRITE_EXTERNAL_STORAGE = 8;
     public static final int CODE_MULTI_PERMISSION = 100;
 
     //
     public static final String PERMISSION_READ_CALENDAR = Manifest.permission.READ_CALENDAR;
     public static final String PERMISSION_WIRTE_CALENDAR = Manifest.permission.WRITE_CALENDAR;
-    
+
     public static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
 
-
-    public static final String PERMISSION_RECORD_AUDIO = Manifest.permission.RECORD_AUDIO;
+    public static final String PERMISSION_READ_CONTACTS = Manifest.permission.READ_CONTACTS;
+    public static final String PERMISSION_WRITE_CONTACTS = Manifest.permission.WRITE_CONTACTS;
     public static final String PERMISSION_GET_ACCOUNTS = Manifest.permission.GET_ACCOUNTS;
-    public static final String PERMISSION_READ_PHONE_STATE = Manifest.permission.READ_PHONE_STATE;
-    public static final String PERMISSION_CALL_PHONE = Manifest.permission.CALL_PHONE;
-    public static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
+
     public static final String PERMISSION_ACCESS_FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
     public static final String PERMISSION_ACCESS_COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
+
+    public static final String PERMISSION_RECORD_AUDIO = Manifest.permission.RECORD_AUDIO;
+
+    public static final String PERMISSION_READ_PHONE_STATE = Manifest.permission.READ_PHONE_STATE;
+    public static final String PERMISSION_CALL_PHONE = Manifest.permission.CALL_PHONE;
+    public static final String PERMISSION_READ_CALL_LOG = Manifest.permission.READ_CALL_LOG;
+    public static final String PERMISSION_WRITE_CALL_LOG = Manifest.permission.WRITE_CALL_LOG;
+    public static final String PERMISSION_ADD_VOICEMAIL = Manifest.permission.ADD_VOICEMAIL;
+    public static final String PERMISSION_USE_SIP = Manifest.permission.USE_SIP;
+    public static final String PERMISSION_PROCESS_OUTGOING_CALLS  =  Manifest.permission.PROCESS_OUTGOING_CALLS;
+
+    public static final String PERMISSION_BODY_SENSORS = Manifest.permission.BODY_SENSORS;
+
+    public static final String PERMISSION_SEND_SMS = Manifest.permission.SEND_SMS;
+    public static final String PERMISSION_RECEIVE_SMS = Manifest.permission.RECEIVE_SMS;
+    public static final String PERMISSION_READ_SMS = Manifest.permission.READ_SMS;
+    public static final String PERMISSION_RECEIVE_WAP_PUSH = Manifest.permission.RECEIVE_WAP_PUSH;
+    public static final String PERMISSION_RECEIVE_MMS = Manifest.permission.RECEIVE_MMS;
+//    public static final String PERMISSION_ = Manifest.permission.Read_CELL_BROADCASTS;
     public static final String PERMISSION_READ_EXTERNAL_STORAGE = Manifest.permission.READ_EXTERNAL_STORAGE;
     public static final String PERMISSION_WRITE_EXTERNAL_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
+
+
+//    public static final String PERMISSION_RECORD_AUDIO = Manifest.permission.RECORD_AUDIO;
+//    public static final String PERMISSION_GET_ACCOUNTS = Manifest.permission.GET_ACCOUNTS;
+//    public static final String PERMISSION_READ_PHONE_STATE = Manifest.permission.READ_PHONE_STATE;
+//    public static final String PERMISSION_CALL_PHONE = Manifest.permission.CALL_PHONE;
+//    public static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
+//    public static final String PERMISSION_ACCESS_FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
+//    public static final String PERMISSION_ACCESS_COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
+//    public static final String PERMISSION_READ_EXTERNAL_STORAGE = Manifest.permission.READ_EXTERNAL_STORAGE;
+//    public static final String PERMISSION_WRITE_EXTERNAL_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
+
     private static final String[] requestPermissions = {
-            PERMISSION_RECORD_AUDIO,
-            PERMISSION_GET_ACCOUNTS,
-            PERMISSION_READ_PHONE_STATE,
-            PERMISSION_CALL_PHONE,
+            PERMISSION_READ_CALENDAR,
+            PERMISSION_WIRTE_CALENDAR,
+
             PERMISSION_CAMERA,
+
+            PERMISSION_READ_CONTACTS,
+            PERMISSION_WRITE_CONTACTS,
+            PERMISSION_GET_ACCOUNTS,
+
             PERMISSION_ACCESS_FINE_LOCATION,
             PERMISSION_ACCESS_COARSE_LOCATION,
+
+            PERMISSION_RECORD_AUDIO,
+
+            PERMISSION_READ_PHONE_STATE,
+            PERMISSION_CALL_PHONE,
+            PERMISSION_READ_CALL_LOG,
+            PERMISSION_WRITE_CALL_LOG,
+            PERMISSION_ADD_VOICEMAIL,
+            PERMISSION_USE_SIP,
+            PERMISSION_PROCESS_OUTGOING_CALLS,
+
+            PERMISSION_BODY_SENSORS,
+
+            PERMISSION_SEND_SMS,
+            PERMISSION_RECEIVE_SMS,
+            PERMISSION_READ_SMS,
+            PERMISSION_RECEIVE_WAP_PUSH,
+            PERMISSION_RECEIVE_MMS,
+
             PERMISSION_READ_EXTERNAL_STORAGE,
             PERMISSION_WRITE_EXTERNAL_STORAGE
     };
